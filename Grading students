@@ -1,0 +1,16 @@
+function gradingStudents(grades) {
+    // Write your code here
+    var grade = []
+  for(let i = 0; i < grades.length; i++){
+      if(grades[i] < 38){
+          grade.push(grades[i])
+      }
+      else if(grades[i] % 5 >= 3){
+          grade.push((Math.floor((grades[i]/5)) *5)+5)
+      }
+      else{
+          grade.push(grades[i])
+      }
+  }
+  return grade;
+   }
